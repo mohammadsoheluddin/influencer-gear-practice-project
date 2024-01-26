@@ -1,0 +1,322 @@
+/* -----------------------
+    *** Google Fonts *** 
+-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Open+Sans:ital,wght@0,400;1,800&family=Poppins:ital,wght@0,200;0,300;0,600;1,300;1,400;1,500&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* -----------------------
+    *** Global Styles *** 
+-------------------------- */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFF;
+}
+
+main,
+header {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+/* -----------------------
+    *** Header Styles *** 
+-------------------------- */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navigation h2 {
+    color: #3A3A3A;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* -----------------------
+    ***Top Banner Styles*** 
+-------------------------- */
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.banner-detail h1 {
+    font-size: 55px;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+.pre-book-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(218, 49, 105);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 90px;
+    margin-top: 30px;
+    border: none;
+}
+
+.pre-book-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.camera-circle-border {
+    width: 450px;
+    height: 450px;
+    border-radius: 475px;
+    border: 2px solid #cfb1f094;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-background img{
+    width: 440px;
+    height: 414px;
+}
+
+.camera-background{
+    width: 340px;
+    height: 340px;
+    background-color: #e8dae860;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------
+    *** Brand Logo Section Styles *** 
+-------------------------- */
+.brand-logo-section {
+    margin-top: 80px;
+}
+
+.brand-logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #bcabab;
+    border-bottom: 1px solid #bcabab;
+    height: 120px;
+    background-color: #e9eded40;
+
+}
+
+/* -----------------------
+    *** Collection Section Styles *** 
+-------------------------- */
+.collection-section {
+    margin-top: 150px;
+}
+
+.collection-section>h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.card {
+    gap: 20px;
+    width: 329px;
+    height: 476px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-thumbnail img {
+    width: 100%;
+    height: 256px;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.card-detail h1 {
+    color: #18191fcb;
+    font-size: 28px;
+}
+
+.card-detail h3 {
+    color: #000000b2;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.card-detail .ratings {
+    display: flex;
+    gap: 10px;
+}
+
+.ratings p {
+    color: #5E6366;
+}
+
+.card-info {
+    color: #5E6366;
+    font-size: 14px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.see-more {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.see-more a {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+
+}
+
+.see-more ion-icon{
+    color: rgba(224, 44, 109, 0.87);
+}
+
+
+
+/* -----------------------
+    *** Featured Product Styles *** 
+-------------------------- */
+.featured-product-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    margin-top: 100px;
+}
+
+.featured-thumbnail{
+    width: 404px;
+    height: 270px;
+}
+
+.featured-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.featured-detail h1 {
+    color: #0A0826;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.featured-detail p {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.join-now-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 24px;
+    background: #E02C6D;
+    border: none;
+    font-weight: 700;
+}
+
+.join-now-btn a {
+    text-decoration: none;
+}
+
+.join-now-btn a,
+ion-icon {
+    color: #FFF;
+}
+
+
+/* -----------------------
+    *** Footer Styles *** 
+-------------------------- */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 200px;
+    background-color: #0A0826;
+    color: #FFF;
+    margin-top: 100px;
+}
+
+.footer-info h1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-info p {
+    color: #d9dbe1bb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+}
+
+.footer-social-media img {
+    padding: 20px 10px 0px;
+}
